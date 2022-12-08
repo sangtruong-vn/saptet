@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Year Countdown</title>
+
+  	<link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+	<!-- <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body style="background-image: url('./images/bg/tet-nguyen-dan-1.png'); background-position: top center; background-repeat: no-repeat; background-size: cover; width: 100%;">
+	<header role="banner" id="header" style="margin-bottom: 100px; padding: 0px;">
+		<nav style="">
+			<!-- <a href="javascript:void(0)" id="menu-icon" style="display:inline-block;" class="text-white">Menu</a>
+			<div id="menu" class="fly left" style="display:inline-block;">
+				<a class="button fill-color" href="#">Link</a>
+				<a class="button fill-color" href="#">Link</a>
+				<a class="button fill-color" href="#">Link</a>
+				<a class="button fill-color" href="#">Link</a>
+			</div>
+
+			<div id="float-menu">
+				<a id="close-menu" class="close-btn" href="javascript:void(0)">X</a>
+				<ul>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div> -->
+			<marquee scrollamount="3" loop="infinite" direction="up" style="height: 57px;">
+				<h2 id="main-title" class="text-white" style="margin-top: 5px;">Sắp Tết rồi!!! Chỉ còn...</h2>
+			</marquee>
+		</nav>
+	</header>
+	<main id="main" style="min-height: 100vh;">
+
+		<center class="main-article">
+			<div class="content">
+				<section style="padding-top: 200px;">
+					<div class="clock">
+						<!-- <div class="clock-item">
+							<div id="years" class="num"></div>
+							<div id="days-text" class="text">Năm</div>
+						</div> -->
+						<div class="clock-item">
+							<div id="days" class="num"></div>
+							<div id="days-text" class="text">Ngày</div>
+						</div>
+						<div class="clock-item">
+							<div id="hours" class="num"></div>
+							<div id="hours-text" class="text">Giờ</div>
+						</div>
+						<div class="clock-item">
+							<div id="mins" class="num"></div>
+							<div id="mins-text" class="text">Phút</div>
+						</div>
+						<div class="clock-item">
+							<div id="secs" class="num"></div>
+							<div id="secs-text" class="text">Giây</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</center>
+	</main>
+	
+</body>
+</html>
